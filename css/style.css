@@ -12,6 +12,13 @@ body {
   background-color: var(--background-color);
 }
 
+header {
+  width: 1170px;
+  height: 79px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
 a {
   text-decoration: none;
 }
