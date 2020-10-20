@@ -1,3 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 :root {
   --main-text-color: #212121;
   --second-text-color: #757575;
@@ -13,9 +33,6 @@ body {
 }
 
 header {
-  width: 1170px;
-  height: 79px;
-  margin: 0 auto;
   outline: 2px solid tomato;
 }
 
@@ -23,11 +40,29 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin-top: 0;
+  padding: 0;
+}
 li {
   list-style-type: none;
 }
 
+.container {
+  width: 1169px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid tomato;
+}
+
+.center {
+  text-align: center;
+}
 /* header */
+
+.header {
+  padding: 25px 0;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   color: var(--main-text-color);
@@ -53,6 +88,7 @@ li {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-left: 30px;
 }
 
 .header-link:hover,
@@ -64,6 +100,7 @@ li {
 /* hero */
 .hero {
   background-color: var(--second-background-color);
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -75,16 +112,18 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .button {
   font-family: "Roboto", sans-serif;
   background-color: var(--nav-button-color);
   color: var(--background-color);
+  width: 200px;
+  height: 50px;
   font-size: 16px;
   line-height: 1.87;
   font-weight: bold;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -100,6 +139,11 @@ li {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.features {
+  padding: 94px 0;
 }
 
 .features-title {
@@ -109,6 +153,7 @@ li {
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .features-description {
@@ -116,9 +161,15 @@ li {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-bottom: 0;
 }
 
 /* work */
+
+.work {
+  padding-bottom: 94px;
+}
+
 .team {
   background-color: var(--third-background-color);
 }
