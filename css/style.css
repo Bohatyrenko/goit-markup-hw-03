@@ -48,6 +48,11 @@ li {
   list-style-type: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1169px;
   margin-right: auto;
@@ -58,6 +63,7 @@ li {
 .center {
   text-align: center;
 }
+
 /* header */
 
 .header {
@@ -181,6 +187,7 @@ li {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -188,12 +195,24 @@ li {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.img {
+  margin-bottom: 30px;
+}
+
+.team-social {
+  margin: 0 32px 30px;
 }
 
 /* footer */
 .footer {
   background-color: var(--second-background-color);
+  padding: 60px 0 60px 215px;
 }
+
+
 
 .address {
   font-family: "Roboto", sans-serif;
