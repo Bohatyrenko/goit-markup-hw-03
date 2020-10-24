@@ -50,7 +50,7 @@ li {
 }
 
 img {
-  display: block;
+  /* display: block; */
   max-width: 100%;
   height: auto;
 }
@@ -70,7 +70,15 @@ img {
   width: 1169px;
   margin-right: auto;
   margin-left: auto;
+  /* display: flex; */
+  align-content: center;
+  /* justify-content: space-between; */
   outline: 1px solid tomato;
+}
+
+.horizont {
+  display: flex;
+  justify-content: space-between;
 }
 
 .center {
@@ -81,7 +89,14 @@ img {
 
 .header {
   padding: 25px 0;
+  display: flex;
+  align-items: flex-end;
 }
+
+.adress-horizont {
+  align-items: flex-start;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   color: var(--main-text-color);
@@ -97,6 +112,16 @@ img {
 
 .studio {
   color: var(--background-color);
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigate {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-link {
@@ -200,6 +225,7 @@ img {
   background-color: var(--third-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  outline: 1px solid tomato;
 }
 
 /* team */
@@ -224,14 +250,17 @@ img {
   margin-bottom: 30px;
 }
 
-.social {
+.team-social {
   padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .clients {
   background-color: var(--third-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  align-items: center;
 }
 
 .social-button {
@@ -244,7 +273,8 @@ img {
 /* footer */
 .footer {
   background-color: var(--second-background-color);
-  padding: 60px 0 60px 215px;
+  padding: 60px 0;
+  justify-content: flex-start;
 }
 
 .address {
@@ -266,7 +296,12 @@ img {
   letter-spacing: 0.03em;
 }
 
-.footer-social {
+.welcome {
+  margin-left: 30px;
+  align-items: baseline;
+}
+
+.footer-title {
   font-family: Roboto;
   font-weight: bold;
   color: var(--background-color);
@@ -275,6 +310,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* !!!Portfolio!!! */
@@ -299,6 +339,10 @@ img {
   color: var(--background-color);
 }
 
+.filter {
+  justify-content: center;
+}
+
 .projects-title {
   color: var(--main-text-color);
   font-weight: bold;
@@ -312,4 +356,10 @@ img {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
