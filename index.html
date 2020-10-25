@@ -13,12 +13,12 @@
   <body>
     <!-- Шапка сайта -->
     <header>
-      <div class="container header">
-        <nav>
+      <div class="container header horizont">
+        <nav class="navigate horizont">
           <a class="logo" href="./index.html"
             ><span class="web">Web</span>Studio</a
           >
-          <ul>
+          <ul class="header-list">
             <li><a class="header-link" href="./index.html">Студия</a></li>
             <li>
               <a class="header-link" href="./portfolio.html">Портфолио</a>
@@ -26,7 +26,7 @@
             <li><a class="header-link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <address>
+        <address class="adress-horizont">
           <a class="header-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
@@ -52,8 +52,8 @@
       <!-- Особенности -->
       <section class="features">
         <h2 class="visually-hidden">Особенности</h2>
-        <div class="container">
-          <ul>
+        <div>
+          <ul class="container horizont">
             <li class="features-item">
               <h3 class="features-title">Внимание к деталям</h3>
               <p class="features-description">
@@ -90,7 +90,7 @@
       <section class="work">
         <div class="container">
           <h2 class="title center">Чем мы занимаемся</h2>
-          <ul>
+          <ul class="horizont">
             <li>
               <img src="./images/lesson1.jpg" alt="Lessons 1" width="370" />
             </li>
@@ -108,7 +108,7 @@
       <section class="team">
         <div class="container social">
           <h2 class="title center">Наша команда</h2>
-          <ul>
+          <ul class="horizont">
             <li>
               <img
                 class="img"
@@ -245,7 +245,7 @@
       <section class="clients">
         <div class="container">
           <h2 class="title center">Постоянные клиенты</h2>
-          <ul>
+          <ul class="horizont">
             <li>
               <a class="social-button" href="#"
                 ><img src="./images/logo-clients/logo-1.png" alt="one"
@@ -283,42 +283,43 @@
 
     <!-- Футер -->
     <footer>
-      <section class="footer">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a class="logo" href="./index.html"
-          ><span class="web">Web</span><span class="studio">Studio</span></a
-        >
-
+      <section class="container footer horizont">
         <address class="address">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="logo" href="./index.html"
+            ><span class="web">Web</span><span class="studio">Studio</span></a
+          ><br />
           г. Киев, пр-т Леси Украинки, 26<br />
           <a class="address-link" href="mailto:info@example.com"
             >info@example.com</a
           ><br />
           <a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
-        <p class="footer-social">Присоединяйтесь</p>
-        <ul>
-          <li>
-            <a href="//www.instagram.com/"
-              ><img src="./images/social/instagram.png" alt="instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="//twitter.com/"
-              ><img src="./images/social/twitter.png" alt="twitter"
-            /></a>
-          </li>
-          <li>
-            <a href="//www.facebook.com/"
-              ><img src="./images/social/facebook.png" alt="facebook"
-            /></a>
-          </li>
-          <li>
-            <a href="//www.linkedin.com/"
-              ><img src="./images/social/linkedin.png" alt="linkedin"
-            /></a>
-          </li>
-        </ul>
+        <div class="welcome">
+          <p class="footer-title">Присоединяйтесь</p>
+          <ul class="footer-social">
+            <li>
+              <a href="//www.instagram.com/"
+                ><img src="./images/social/instagram.png" alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="//twitter.com/"
+                ><img src="./images/social/twitter.png" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="//www.facebook.com/"
+                ><img src="./images/social/facebook.png" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="//www.linkedin.com/"
+                ><img src="./images/social/linkedin.png" alt="linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
   </body>
