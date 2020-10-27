@@ -33,7 +33,12 @@ body {
 }
 
 header {
-  outline: 2px solid tomato;
+  padding: 25px 0;
+}
+
+footer {
+  background-color: var(--second-background-color);
+  padding: 60px 0;
 }
 
 a {
@@ -50,7 +55,7 @@ li {
 }
 
 img {
-  /* display: block; */
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -70,10 +75,7 @@ img {
   width: 1169px;
   margin-right: auto;
   margin-left: auto;
-  /* display: flex; */
   align-content: center;
-  /* justify-content: space-between; */
-  outline: 1px solid tomato;
 }
 
 .horizont {
@@ -88,7 +90,6 @@ img {
 /* header */
 
 .header {
-  padding: 25px 0;
   display: flex;
   align-items: flex-end;
 }
@@ -184,12 +185,10 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  outline: 2px solid tomato;
 }
 
 .features {
   padding: 94px 0;
-  outline: 1px solid tomato;
 }
 
 .features-title {
@@ -218,14 +217,12 @@ img {
 
 .work {
   padding-bottom: 94px;
-  outline: 1px solid tomato;
 }
 
 .team {
   background-color: var(--third-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 1px solid tomato;
 }
 
 /* team */
@@ -236,6 +233,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .team-position {
@@ -244,6 +242,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .img {
@@ -278,6 +277,7 @@ img {
 }
 
 .address {
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   color: var(--background-color);
   font-style: normal;
@@ -286,7 +286,13 @@ img {
   letter-spacing: 0.03em;
 }
 
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .address-link {
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -294,6 +300,10 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.mail-footer{
+  margin: 9px 0;
 }
 
 .welcome {
@@ -318,7 +328,27 @@ img {
 }
 
 /* !!!Portfolio!!! */
+
+.heder-line {
+  width: 1600px;
+  height: 0px;
+  border-bottom: 1px solid #ECECEC;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 /* Main */
+
+.portfolio-container {
+  width: 1169px;
+  margin-top: 95px;
+  margin-bottom: 95px;
+  margin-right: auto;
+  margin-left: auto;
+  align-content: center;
+}
+
 .button-filter {
   font-family: "Roboto", sans-serif;
   background-color: var(--third-background-color);
@@ -331,6 +361,7 @@ img {
   border-color: transparent;
   border-radius: 5px;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
 }
 
 .button-filter:hover,
@@ -341,8 +372,25 @@ img {
 
 .filter {
   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
 }
 
+.filter-item {
+  margin-right: 8px;
+}
+
+
+.portfolio-item {
+  background-color: var(--background-color);
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+}
+
+.portfolio-bottom {
+  margin-bottom: 30px;
+}
 .projects-title {
   color: var(--main-text-color);
   font-weight: bold;
