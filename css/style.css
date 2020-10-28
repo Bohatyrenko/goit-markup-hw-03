@@ -16,6 +16,7 @@ h5,
 h6,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 :root {
@@ -30,6 +31,7 @@ p {
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
+  margin: 0px;
 }
 
 header {
@@ -333,23 +335,15 @@ img {
 
 /* !!!Portfolio!!! */
 
-.heder-line {
-  width: 1600px;
-  height: 0px;
+.header-line {
   border-bottom: 1px solid #ececec;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /* Main */
 
-.portfolio-container {
-  width: 1169px;
-  margin-top: 95px;
-  margin-bottom: 95px;
-  margin-right: auto;
-  margin-left: auto;
-  align-content: center;
+.portfolio-padding {
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .button-filter {
@@ -393,12 +387,18 @@ img {
 .portfolio-bottom {
   margin-bottom: 30px;
 }
+
+.portfolio-name {
+  padding: 20px 24px;
+}
+
 .projects-title {
   color: var(--main-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .projects-kind {
