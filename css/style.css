@@ -117,11 +117,22 @@ img {
 .header-list {
   display: flex;
   flex-direction: row;
+  margin-left: 93px;
 }
 
 .navigate {
   justify-content: space-between;
   align-items: center;
+}
+
+.header-link-first {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-link {
